@@ -1,0 +1,30 @@
+/* Fonts */
+/* DM Serif Display  */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+/* Lexend Deca */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Tailwind configuration */
+* {
+  box-sizing: border-box !important;
+}
+/*  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root Variables */
+:root {
+  /* fonts */
+  --header-font: "DM Serif Display", serif;
+  --primary-font: "Lexend Deca", sans-serif;
+  /* colors */
+  --primary-color: #6eeb83;
+  --main-color: #ffffff;
+  --light-color: #a5a5a5;
+  /* background colors */
+  --bg-primary: #272727;
+  --bg-danger: #ff5e5b;
+}
+body {
+  @apply font-primary;
+}
